@@ -4,7 +4,7 @@ use std::{
     path::Path,
 };
 
-const ADDRESS_FILENAME: &str = "../address-500k.csv";
+const ADDRESS_FILENAME: &str = "address-500k.csv";
 const DAWA_ADDRESS_FILENAME: &str = "../address.csv";
 
 pub struct Municipality {
