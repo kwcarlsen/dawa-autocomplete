@@ -1,6 +1,12 @@
 use serde_json::{json, Value};
 
-pub fn autocomplete(q: Option<String>, r#type: Option<String>, fuzzy: Option<String>, caretpos: Option<String>, per_side: Option<String>) -> Value {
+pub fn autocomplete(
+    q: Option<String>,
+    r#type: Option<String>,
+    fuzzy: Option<String>,
+    caretpos: Option<String>,
+    per_side: Option<String>,
+) -> Value {
     json!(
         [
             {
@@ -33,6 +39,6 @@ pub fn autocomplete(q: Option<String>, r#type: Option<String>, fuzzy: Option<Str
                 "href": "https://api.dataforsyningen.dk/vejnavne/Gl.%20Maribovej"
               }
             }
-          ]           
+          ]
     )
 }
